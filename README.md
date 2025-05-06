@@ -29,3 +29,11 @@ After this step, you will obtain the MATSim plan.xml. The coming step would be g
 ## Running MATSim MRDH Scenario
 
 After network and PT Schedule is ready, the respective class for running MATSim is [RunMRDH](./src/main/java/org/matsim/project/runMRDHScenario.java)
+
+## Skim Matrices Analysis
+
+The output of MATSim does not directly have skim matrices. However, in the co-simulation framework, skim matrices are required for the loop from MATSim to ActivitySim.
+
+We used MATSim SBB extension (https://github.com/SchweizerischeBundesbahnen/matsim-sbb-extensions) for skim matrices calculation.
+
+The relevant code for skim matrices calculation is in [PlanTransferWithDRT_step1](./src/main/java/org/matsim/listener/skimCalculationOnHPC.java)
