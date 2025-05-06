@@ -22,4 +22,10 @@ the trip file from ActivitySim has been transferred into synthetic travel demand
 ## Get the synthetic travel demand in the format of MATSim plan.xml
 
 After obtaining the csv file the repo for transforming the output of ActivitySim trip into MATSim plan, in order to transform the csv into matsim plan.xml,
-first need to run the script [PlanTransferWithDRT_step1](./src/main/java/org/matsim/activitySimtoMATSim/planTransfer_step1.java)
+first need to run the script [PlanTransferWithDRT_step1](./src/main/java/org/matsim/activitySimtoMATSim/planTransfer.java).
+
+After this step, you will obtain the MATSim plan.xml. The coming step would be get your MATSim network from OpenStreetMap and GTFS public transit schedule.
+
+## Running MATSim MRDH Scenario
+
+After network and PT Schedule is ready, the respective class for running MATSim is [RunMRDH](./src/main/java/org/matsim/project/runMRDHScenario.java)

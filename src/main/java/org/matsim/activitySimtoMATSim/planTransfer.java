@@ -24,7 +24,7 @@ import java.util.Map;
 //transfer ActiviySim output from python (https://github.com/jingjunL/Transforming-ActivitySim-Output-into-MATSim-Input) and R into matsim plan
 //First thing to do: remove the first line in the csv
 
-public class planTransfer_step1 {
+public class planTransfer {
 
     public static void main(String[] args) {
         Config config = ConfigUtils.createConfig();
